@@ -1,0 +1,89 @@
+/* ── Grow section ──────────────────────────────────── */
+.lh-grow {
+  padding: 80px 5.5%;
+  background-color: var(--secondary-background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.lh-grow-title {
+  font-family: 'Lato', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--text-color);
+  text-align: center;
+  margin: 0;
+  line-height: 1.25;
+  letter-spacing: 0;
+  white-space: pre-line;
+}
+
+.lh-grow-desc {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--text-color);
+  line-height: 1.85;
+  letter-spacing: 0.3px;
+  margin: 0;
+  opacity: 0.85;
+  text-align: center;
+  max-width: 560px;
+}
+
+/* ── Event cards ───────────────────────────────────── */
+.lh-events {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  padding: 0 5.5% 100px;
+  background-color: var(--secondary-background-color);
+}
+
+.lh-event-card {
+  position: relative;
+  height: 320px;
+  overflow: hidden;
+}
+
+.lh-event-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.lh-event-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 40px 20px 20px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.65), transparent);
+}
+
+.lh-event-overlay h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+/* ── Responsive ───────────────────────────────────── */
+@media (max-width: 768px) {
+  .lh-grow-title {
+    font-size: 28px;
+  }
+
+  .lh-events {
+    grid-template-columns: 1fr;
+  }
+
+  .lh-event-card {
+    height: 240px;
+  }
+}

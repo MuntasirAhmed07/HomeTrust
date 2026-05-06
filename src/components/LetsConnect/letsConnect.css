@@ -1,0 +1,129 @@
+.lets-connect {
+  display: flex;
+  padding: 20px;
+  background-color: var(--background-color);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.lets-connect-image {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.lets-connect-image img {
+  width: 100%;
+  max-width: 647px;
+  height: auto;
+  border: 1px solid var(--secondary-color);
+  margin-top: 2rem;
+}
+
+.lets-connect-content {
+  padding: 10px;
+  max-width: 521px;
+  width: 100%;
+}
+
+.lets-connect-content h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.client-section,
+.landowners-section {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.client-section h3,
+.landowners-section h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+.client-section p,
+.landowners-section p {
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+/* Tablet styles */
+@media (min-width: 768px) {
+  .lets-connect {
+    padding: 40px;
+  }
+
+  .lets-connect-content h2 {
+    font-size: 3.5em;
+  }
+
+  .client-section h3,
+  .landowners-section h3 {
+    font-size: 1.4em;
+  }
+
+  .client-section p,
+  .landowners-section p {
+    font-size: 1em;
+    line-height: 1.6;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+  .lets-connect {
+    flex-direction: row;
+    text-align: left;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .lets-connect-image {
+    flex: 0 0 50%;
+    padding: 10px;
+  }
+
+  .lets-connect-image img {
+    width: 647px;
+    height: 408px;
+    margin-top: 4rem;
+  }
+
+  .lets-connect-content {
+    flex: 0 0 50%;
+    padding: 10px;
+    width: 521px;
+  }
+
+  .lets-connect-content h2 {
+    text-align: left;
+    font-size: 4em;
+  }
+
+  .client-section,
+  .landowners-section {
+    text-align: left;
+    width: 521px;
+  }
+
+  .client-section h3,
+  .landowners-section h3 {
+    text-align: left;
+    font-size: 1.5em;
+  }
+
+  .client-section p,
+  .landowners-section p {
+    font-size: inherit;
+    line-height: inherit;
+  }
+}

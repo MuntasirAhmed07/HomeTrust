@@ -1,0 +1,233 @@
+/* ── Board of Directors ───────────────────────────── */
+.ot-section-title {
+  font-family: 'Lato', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text-color);
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 60px;
+}
+
+.ot-board {
+  padding: 80px 5.5%;
+  background-color: var(--secondary-background-color);
+}
+
+.ot-directors {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+/* Director card */
+.ot-director {
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+.ot-director--reverse {
+  flex-direction: row-reverse;
+}
+
+.ot-director-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+
+.ot-director-label {
+  font-family: 'Lato', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--secondary-color);
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  opacity: 0.55;
+  margin: 0;
+}
+
+.ot-director-name {
+  font-family: 'Lato', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--text-color);
+  letter-spacing: 1px;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.ot-director-subtitle {
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text-color);
+  opacity: 0.6;
+  margin: 0;
+  font-style: italic;
+}
+
+.ot-director-bio {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--text-color);
+  line-height: 1.85;
+  letter-spacing: 0.3px;
+  margin: 8px 0 0;
+  opacity: 0.85;
+}
+
+.ot-director-img-box {
+  flex: 0 0 320px;
+  height: 380px;
+  border: 1.5px solid var(--secondary-color);
+  overflow: hidden;
+}
+
+.ot-director-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  opacity: 0.9;
+}
+
+/* ── Members ──────────────────────────────────────── */
+.ot-members {
+  padding: 200px 5.5%;
+  background-color: var(--background-color);
+}
+
+.ot-members-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.ot-members-grid-bottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+  width: calc(66.66% + 7px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ot-member-card {
+  border: 1px solid var(--secondary-color);
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ot-member-card h4 {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-color);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.ot-member-card p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--text-color);
+  line-height: 1.7;
+  margin: 0;
+  opacity: 0.75;
+}
+
+/* ── Team image ───────────────────────────────────── */
+.ot-team-img-wrap {
+  width: 90vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 480px;
+  overflow: hidden;
+}
+
+.ot-team-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── Bottom description ───────────────────────────── */
+.ot-about {
+  padding: 70px 5.5%;
+  background-color: var(--background-color);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.ot-about p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--text-color);
+  line-height: 1.85;
+  letter-spacing: 0.3px;
+  margin: 0;
+  opacity: 0.85;
+  text-align: left;
+}
+
+.ot-about strong {
+  font-weight: 600;
+}
+
+/* ── Responsive ───────────────────────────────────── */
+@media (max-width: 768px) {
+  .ot-director,
+  .ot-director--reverse {
+    flex-direction: column;
+  }
+
+  .ot-director-img-box {
+    flex: none;
+    width: 100%;
+    height: 260px;
+  }
+
+  .ot-members-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ot-members-grid-bottom {
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin: 20px 0 0;
+  }
+
+  .ot-about {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .ot-contact {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .ot-contact-right {
+    align-items: flex-start;
+  }
+
+  .ot-contact-address {
+    text-align: left;
+  }
+}

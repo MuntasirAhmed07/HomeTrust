@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(unzip -l \"/Users/muntasirahmed/Downloads/Home Trust Living Ltd..zip\")",
+      "Bash(unzip -o \"/Users/muntasirahmed/Downloads/Home Trust Living Ltd..zip\" -d /Users/muntasirahmed/Documents/real-estate-design/src/assets/partners/)"
+    ]
+  }
+}

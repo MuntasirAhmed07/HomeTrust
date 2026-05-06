@@ -1,0 +1,81 @@
+/* body:not(.dark-mode) .our-story {
+  color: black;
+  -webkit-text-stroke: 2px #000;
+  text-stroke: 2px #000;
+}
+
+.marq-text-container {
+  position: relative;
+  text-align: center;
+  right: 0;
+  width: 100%;
+}
+
+.marq-top-text-outline {
+  line-height: 90%;
+  text-align: center;
+  width: 100%;
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--text-color) !important;
+  position: absolute;
+  top: -4.5rem;
+  right: 20px;
+  font-family: 'Lato', sans-serif;
+  font-size: 3rem;
+  transform: translate(-50%);
+  z-index: 1;
+}
+
+.marq-top-fill-text {
+  line-height: 90%;
+  text-align: center;
+  width: 100%;
+  color: var(--text-color);
+  position: absolute;
+  top: -4.5rem;
+  right: 20px;
+  font-family: 'Lato', sans-serif;
+  font-size: 3rem;
+  transform: translate(-50%);
+  z-index: -12;
+} */
+
+/* Container */
+.marq-text-container {
+  position: relative;
+  width: 100%;
+  height: 5rem;
+}
+
+.marquee-wrapper {
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  width: max-content;
+}
+
+/* Your original styles remain unchanged */
+.marq-top-text-outline {
+  line-height: 90%;
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--text-color);
+  font-family: 'Lato', sans-serif;
+  font-size: 3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.marq-top-fill-text {
+  line-height: 90%;
+  color: var(--text-color);
+  font-family: 'Lato', sans-serif;
+  font-size: 3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  z-index: -1;
+}

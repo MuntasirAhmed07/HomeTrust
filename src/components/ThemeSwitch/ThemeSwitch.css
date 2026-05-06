@@ -1,0 +1,49 @@
+.theme-switch {
+  display: flex;
+  align-items: center;
+}
+
+.theme-switch span {
+  margin-right: 10px;
+  font-size: 16px;
+  color: black; /* Default to black for light mode */
+}
+
+.theme-switch.dark span {
+  color: white; /* White text for dark mode */
+}
+
+.toggle-switch {
+  width: 44px;
+  height: 22px;
+  background-color: var(--toggle-track);
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.toggle-switch input[type='checkbox'] {
+  appearance: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.toggle-thumb {
+  width: 16px;
+  height: 16px;
+  background-color: var(--toggle-thumb);
+  border-radius: 50%;
+  position: absolute;
+  top: 2.5px;
+  left: 2px;
+  transition: transform 0.3s ease;
+}
+
+.theme-switch.dark .toggle-thumb {
+  transform: translateX(22px);
+}

@@ -1,0 +1,455 @@
+/* ── Why Choose ────────────────────────────────────── */
+.wht-choose {
+  padding: 100px 5.5%;
+  background-color: var(--secondary-background-color);
+}
+
+.wht-section-title {
+  font-family: 'Lato', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text-color);
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 48px;
+}
+
+.wht-choose-desc {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--text-color);
+  line-height: 1.85;
+  letter-spacing: 0.3px;
+  margin: 0 auto 64px;
+  opacity: 0.85;
+  text-align: center;
+  max-width: 760px;
+}
+
+.wht-standout-title {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-color);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0 0 24px;
+  text-align: center;
+}
+
+.wht-standout-row {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.wht-standout-row--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.wht-standout-row--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.wht-standout-card {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+}
+
+.wht-standout-row--2 .wht-standout-card {
+  height: 220px;
+}
+
+.wht-standout-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.wht-standout-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 28px 16px 16px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.65), transparent);
+}
+
+.wht-standout-overlay h4 {
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 0.5px;
+  margin: 0;
+  white-space: pre-line;
+  line-height: 1.4;
+}
+
+/* ── Design Philosophy ─────────────────────────────── */
+.wht-philosophy {
+  padding: 100px 5.5%;
+  background-color: var(--background-color);
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+}
+
+.wht-philosophy-left {
+  flex: 0 0 44%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 150px;
+}
+
+.wht-philosophy-title {
+  font-family: 'Lato', sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--text-color);
+  letter-spacing: 0;
+  text-transform: none;
+  margin: 0;
+  line-height: 1.15;
+  text-align: left;
+}
+
+.wht-philosophy-sub {
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--text-color);
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+  margin: 0;
+  opacity: 0.9;
+  text-align: left;
+}
+
+.wht-philosophy-label {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-color);
+  letter-spacing: 0.5px;
+  margin: 0;
+  text-align: left;
+}
+
+.wht-philosophy-ol {
+  padding-left: 18px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.wht-philosophy-ol li {
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--text-color);
+  line-height: 1.7;
+  letter-spacing: 0.2px;
+  opacity: 0.85;
+  text-align: left;
+}
+
+.wht-philosophy-ul {
+  list-style: disc;
+  padding-left: 18px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.wht-philosophy-ul li {
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--text-color);
+  line-height: 1.7;
+  letter-spacing: 0.2px;
+  opacity: 0.85;
+  text-align: left;
+}
+
+.wht-philosophy-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wht-philosophy-right img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  display: block;
+}
+
+/* ── Firsts ────────────────────────────────────────── */
+.wht-firsts {
+  padding: 80px 0 60px;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.wht-firsts-title {
+  font-family: 'Lato', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-color);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+}
+
+.wht-firsts-sub {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--text-color);
+  letter-spacing: 0.3px;
+  margin: 0 0 24px;
+  opacity: 0.8;
+  text-align: center;
+  white-space: pre-line;
+  line-height: 1.6;
+}
+
+.wht-firsts-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  width: 100%;
+  padding: 0 5.5%;
+}
+
+.wht-firsts-slide--active {
+  flex: 0 0 340px;
+  height: 380px;
+  overflow: hidden;
+  cursor: default;
+}
+
+.wht-firsts-slide--active img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.wht-firsts-slide--side {
+  flex: 0 0 200px;
+  height: 240px;
+  overflow: hidden;
+}
+
+.wht-firsts-slide--side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.wht-firsts-placeholder {
+  width: 100%;
+  height: 100%;
+  border: 1.5px solid var(--secondary-color);
+}
+
+.wht-firsts-dots {
+  display: flex;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.wht-firsts-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1.5px solid var(--secondary-color);
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s;
+}
+
+.wht-firsts-dot--active {
+  background: var(--secondary-color);
+}
+
+/* ── Get In Touch ──────────────────────────────────── */
+.wht-contact {
+  padding: 100px 5.5%;
+  background-color: var(--secondary-background-color);
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+}
+
+.wht-contact-left {
+  flex: 0 0 50%;
+}
+
+.wht-contact-title {
+  font-family: 'Lato', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text-color);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin: 0 0 40px;
+  text-align: left;
+}
+
+.wht-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.wht-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.wht-form-group label {
+  font-family: 'Lato', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-color);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.6;
+  text-align: left;
+}
+
+.wht-form-group input,
+.wht-form-group textarea {
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--silver-light);
+  padding: 10px 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--text-color);
+  outline: none;
+  resize: none;
+  width: 100%;
+}
+
+.wht-form-group input::placeholder,
+.wht-form-group textarea::placeholder {
+  opacity: 0.4;
+}
+
+.wht-form-btn {
+  align-self: flex-start;
+  background: none;
+  border: 1px solid var(--secondary-color);
+  padding: 12px 36px;
+  font-family: 'Lato', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-color);
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+.wht-form-btn:hover {
+  background: var(--secondary-color);
+  color: #fff;
+}
+
+.wht-contact-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  padding-top: 80px;
+  text-align: left;
+}
+
+.wht-contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.wht-contact-label {
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-color);
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+
+  margin: 0;
+}
+
+.wht-contact-value {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--text-color);
+  line-height: 1.7;
+  letter-spacing: 0.3px;
+  margin: 0;
+}
+
+/* ── Responsive ───────────────────────────────────── */
+@media (max-width: 768px) {
+  .wht-standout-row--3 {
+    grid-template-columns: 1fr;
+  }
+
+  .wht-standout-row--2 {
+    grid-template-columns: 1fr;
+  }
+
+  .wht-standout-card,
+  .wht-standout-row--2 .wht-standout-card {
+    height: 200px;
+  }
+
+  .wht-philosophy {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .wht-philosophy-title {
+    font-size: 32px;
+  }
+
+  .wht-contact {
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .wht-contact-right {
+    padding-top: 0;
+  }
+
+  .wht-firsts-img-wrap {
+    height: 280px;
+  }
+}

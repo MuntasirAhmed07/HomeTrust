@@ -1,0 +1,137 @@
+.home_stats_area {
+  width: 100%;
+}
+
+.body_wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.animated-heading-area {
+  padding-top: var(--padding-top);
+  padding-bottom: var(--padding-bottom);
+}
+
+.stats_heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.stats_heading p {
+  margin: 0;
+  line-height: 1.2;
+}
+
+.details_stats {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.building_image {
+  position: relative;
+  width: 100%;
+}
+
+.building-image-area,
+.building-image-area-mobile {
+  width: 100%;
+  overflow: hidden;
+}
+
+.building-image-area img,
+.building-image-area-mobile img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.single_stat {
+  flex: 1;
+  text-align: center;
+}
+
+.stat_left {
+  text-align: left;
+}
+
+.counter-wrapper {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.counter-wrapper div:first-child {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .stats-container {
+    flex-direction: column;
+  }
+
+  .single_stat,
+  .stat_left {
+    text-align: center;
+  }
+
+  .building-image-area {
+    display: none;
+  }
+
+  .building-image-area-mobile {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .building-image-area-mobile {
+    display: none;
+  }
+}
+
+/* .animated-heading {
+  font-family: 'Lato', sans-serif;
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.line {
+  display: block;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.word {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.char {
+  display: inline-block;
+  position: relative;
+}
+
+/* For the bold "Transform Your Land" line */
+/*.line:nth-child(2) {
+  font-weight: 700;
+} */

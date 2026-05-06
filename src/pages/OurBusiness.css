@@ -1,0 +1,72 @@
+/* ── Description ───────────────────────────────────── */
+.ob-desc {
+  padding: 80px 5.5%;
+  background-color: var(--secondary-background-color);
+  display: flex;
+  justify-content: center;
+}
+
+.ob-desc p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-color);
+  line-height: 1.85;
+  letter-spacing: 0.3px;
+  margin: 0;
+  text-align: center;
+  max-width: 680px;
+}
+
+/* ── Business Cards ────────────────────────────────── */
+.ob-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: var(--secondary-background-color);
+  padding: 0 5.5% 100px;
+  gap: 16px;
+}
+
+.ob-card {
+  position: relative;
+  height: 320px;
+  overflow: hidden;
+}
+
+.ob-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.ob-card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 48px 20px 20px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.72), transparent);
+}
+
+.ob-card-overlay h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 0.5px;
+  margin: 0;
+  white-space: pre-line;
+  line-height: 1.45;
+}
+
+/* ── Responsive ───────────────────────────────────── */
+@media (max-width: 768px) {
+  .ob-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .ob-card {
+    height: 260px;
+  }
+}

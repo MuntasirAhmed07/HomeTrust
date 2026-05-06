@@ -1,0 +1,63 @@
+/* ── Description ───────────────────────────────────── */
+.op-desc {
+  padding: 60px 5.5%;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+}
+
+.op-desc p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--text-color);
+  line-height: 1.85;
+  letter-spacing: 0.3px;
+  margin: 0;
+  opacity: 0.85;
+  text-align: center;
+  max-width: 480px;
+}
+
+/* ── Logos grid ────────────────────────────────────── */
+.op-logos {
+  padding: 0 5.5% 100px;
+  background-color: var(--background-color);
+}
+
+.op-logos-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+}
+
+.op-logo-cell {
+  background-color: var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 24px;
+  min-height: 120px;
+}
+
+.op-logo-cell img {
+  max-width: 240px;
+  max-height: 164px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  filter: grayscale(20%);
+  transition: filter 0.3s;
+}
+
+.op-logo-cell img:hover {
+  filter: grayscale(0%);
+}
+
+/* ── Responsive ───────────────────────────────────── */
+@media (max-width: 768px) {
+  .op-logos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

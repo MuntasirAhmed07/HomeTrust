@@ -1,0 +1,112 @@
+{
+  "projects": [
+    {
+      "id": "ayesha",
+      "name": "Ayesha",
+      "fullName": "Hometrust Ayesha",
+      "shortAddress": "Road 20, Plot 03, Rupnagar R/A, Mirpur Housing Estate, Mirpur, Dhaka.",
+      "fullAddress": "Road 20, Plot 03, Rupnagar R/A, Mirpur Housing Estate, Mirpur, Dhaka.",
+      "status": "Ongoing",
+      "type": "Residential",
+      "location": "Mirpur",
+      "mainImage": "/images/ayesha-main.jpg",
+      "thumbnailImage": "/images/ayesha-thumb.jpg",
+      "gallery": ["/images/ayesha-1.jpg", "/images/ayesha-2.jpg"],
+      "details": {
+        "architect": "Anirban Adhikari",
+        "land": "1800 sft (2.50 katha)",
+        "stories": "G + 7",
+        "flats": "7",
+        "basements": "0",
+        "carParking": "5",
+        "orientation": "North Faced",
+        "frontRoadWidth": "20' Wide",
+        "apartmentSize": "Single Unit-1600 Sft"
+      },
+      "map": {
+        "embedUrl": "REPLACE_WITH_REAL_GOOGLE_MAPS_EMBED_URL"
+      }
+    },
+    {
+      "id": "bari-cottage",
+      "name": "Bari Cottage",
+      "fullName": "Hometrust Bari Cottage",
+      "shortAddress": "Road 3, Plot 7/8, Block J, Arifabad Cooperative Housing, Mirpur, Dhaka.",
+      "fullAddress": "Road 3, Plot 7/8, Block J, Arifabad Cooperative Housing, Mirpur, Dhaka.",
+      "status": "Ongoing",
+      "type": "Residential",
+      "location": "Mirpur",
+      "mainImage": "/images/bari-cottage-main.jpg",
+      "thumbnailImage": "/images/bari-cottage-thumb.jpg",
+      "gallery": ["/images/bari-cottage-1.jpg", "/images/bari-cottage-2.jpg"],
+      "details": {
+        "architect": "TBD",
+        "land": "TBD",
+        "stories": "TBD",
+        "flats": "TBD",
+        "basements": "TBD",
+        "carParking": "TBD",
+        "orientation": "TBD",
+        "frontRoadWidth": "TBD",
+        "apartmentSize": "TBD"
+      },
+      "map": {
+        "embedUrl": "REPLACE_WITH_REAL_GOOGLE_MAPS_EMBED_URL"
+      }
+    },
+    {
+      "id": "dilara",
+      "name": "Dilara",
+      "fullName": "Hometrust Dilara",
+      "shortAddress": "Road 15, Plot 48, Rupnagar R/A, Mirpur Housing Estate, Mirpur, Dhaka.",
+      "fullAddress": "Road 15, Plot 48, Rupnagar R/A, Mirpur Housing Estate, Mirpur, Dhaka.",
+      "status": "Upcoming",
+      "type": "Residential",
+      "location": "Mirpur",
+      "mainImage": "/images/dilara-main.jpg",
+      "thumbnailImage": "/images/dilara-thumb.jpg",
+      "gallery": ["/images/dilara-1.jpg", "/images/dilara-2.jpg"],
+      "details": {
+        "architect": "TBD",
+        "land": "TBD",
+        "stories": "TBD",
+        "flats": "TBD",
+        "basements": "TBD",
+        "carParking": "TBD",
+        "orientation": "TBD",
+        "frontRoadWidth": "TBD",
+        "apartmentSize": "TBD"
+      },
+      "map": {
+        "embedUrl": "REPLACE_WITH_REAL_GOOGLE_MAPS_EMBED_URL"
+      }
+    },
+    {
+      "id": "aj",
+      "name": "AJ",
+      "fullName": "Hometrust AJ",
+      "shortAddress": "Plot- 641, Road- 05, Block-G, Basundhara R/A, Dhaka.",
+      "fullAddress": "Plot- 641, Road- 05, Block-G, Basundhara R/A, Dhaka.",
+      "status": "Completed",
+      "type": "Residential",
+      "location": "Basundhara",
+      "mainImage": "/images/aj-main.jpg",
+      "thumbnailImage": "/images/aj-thumb.jpg",
+      "gallery": ["/images/aj-1.jpg", "/images/aj-2.jpg"],
+      "details": {
+        "architect": "TBD",
+        "land": "TBD",
+        "stories": "TBD",
+        "flats": "TBD",
+        "basements": "TBD",
+        "carParking": "TBD",
+        "orientation": "TBD",
+        "frontRoadWidth": "TBD",
+        "apartmentSize": "TBD"
+      },
+      "map": {
+        "embedUrl": "REPLACE_WITH_REAL_GOOGLE_MAPS_EMBED_URL"
+      }
+    }
+  ]
+}

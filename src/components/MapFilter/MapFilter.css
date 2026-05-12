@@ -1,0 +1,96 @@
+.map-filter-bar {
+  position: absolute;
+  bottom: 24px;
+  left: 30px;
+  z-index: 1000;
+  display: flex;
+  border-radius: 0 0 0 0;
+  overflow: visible;
+}
+
+.filter-pill-wrapper {
+  position: relative;
+}
+
+.filter-pill-wrapper:first-child .filter-pill {
+  border-radius: 0;
+}
+
+.filter-pill-wrapper:last-child .filter-pill {
+  border-radius: 0 0 0 0;
+}
+
+.filter-pill-wrapper:not(:last-child) .filter-pill {
+  border-right: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.filter-pill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 24px 24px;
+  background: rgba(75, 71, 67, 1);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: inherit;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+  transition: background 0.15s;
+  height: 100%;
+}
+
+.filter-pill:hover,
+.filter-pill-wrapper.open .filter-pill {
+  background: rgba(55, 52, 48, 0.98);
+}
+
+.filter-chevron {
+  font-size: 12px;
+  opacity: 0.65;
+  line-height: 1;
+}
+
+.filter-clear {
+  font-size: 17px;
+  line-height: 1;
+  opacity: 0.75;
+  margin-left: 1px;
+  transition: opacity 0.1s;
+}
+
+.filter-clear:hover {
+  opacity: 1;
+}
+
+.filter-dropdown {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  background: rgba(75, 71, 67, 0.97);
+  list-style: none;
+  margin: 0;
+  padding: 6px 0;
+  min-width: 100%;
+  overflow: hidden;
+  box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.25);
+}
+
+.filter-option {
+  padding: 22px 22px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  white-space: nowrap;
+  transition: background 0.12s;
+}
+
+.filter-option:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.filter-option.selected {
+  background: rgba(255, 255, 255, 0.16);
+}

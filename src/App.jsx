@@ -68,6 +68,8 @@ import OurPartners from './pages/OurPartners';
 import OurStory from './pages/OurStory';
 import OurTeam from './pages/OurTeam';
 import WhyHomeTrust from './pages/WhyHomeTrust';
+import ProjectsListing from './pages/ProjectsListing';
+import ProjectDetail from './pages/ProjectDetail';
 
 const App = () => {
   const router = createBrowserRouter([
@@ -84,6 +86,8 @@ const App = () => {
         { path: 'lifeathometrust', element: <LifeAtHomeTrust /> },
         { path: 'landowners', element: <Landowners /> },
         { path: 'contactus', element: <ContactUs /> },
+        { path: 'projects', element: <ProjectsListing /> },
+        { path: 'projects/:id', element: <ProjectDetail /> },
       ],
     },
     { path: '*', element: <NotFound /> },

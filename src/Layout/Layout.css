@@ -8,7 +8,7 @@
   height: 100px;
   position: fixed;
   top: 0;
-  z-index: 100;
+  z-index: 890;
 }
 
 /* Logo Section */
@@ -63,11 +63,24 @@
   right: 100px; /* Adjust as needed */
 }
 
+.close-button .menu-txt {
+  color: #ffffff;
+}
+
+.close-button .menu-icon::before,
+.close-button .menu-icon::after {
+  background-color: #ffffff;
+}
+
 .menu-txt {
   color: var(--text-color);
   font-size: 15px;
   position: relative;
   display: flex;
+}
+
+.menu.menu-active .menu-txt {
+  color: #ffffff;
 }
 
 .menu-txt p {
@@ -103,6 +116,15 @@
   background-color: var(--text-color);
   position: absolute;
   left: 0;
+}
+
+.menu.menu-active .menu-icon {
+  background-color: #ffffff;
+}
+
+.menu.menu-active .menu-icon::before,
+.menu.menu-active .menu-icon::after {
+  background-color: #ffffff;
 }
 
 .menu-icon::before {
@@ -166,9 +188,9 @@
   right: 0;
   top: 0;
   height: 100vh;
-  background-color: darkred;
+  background-color: #242123;
   color: white;
-  z-index: 200;
+  z-index: 900;
 }
 
 .body {
@@ -185,7 +207,7 @@
   flex-direction: column;
   font-family: lato, sans-serif;
   font-size: 36px;
-  gap: 25px;
+  gap: 15px;
   /* margin-top: 10px; */
 }
 

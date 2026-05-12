@@ -32,7 +32,7 @@ const AppLayout = () => {
 
   return (
     <>
-      <Navbar toggleNavSideBar={toggleNavSideBar} />
+      <Navbar toggleNavSideBar={toggleNavSideBar} isNavOpen={isNavSideBarActive} />
       <AnimatePresence mode="wait">
         {isNavSideBarActive && (
           <NavSideBar toggleNavSideBar={toggleNavSideBar} />

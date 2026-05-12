@@ -9,7 +9,7 @@ import './Layout.css';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const Navbar = ({ toggleNavSideBar }) => {
+const Navbar = ({ toggleNavSideBar, isNavOpen }) => {
   const navbarRef = useRef(null); // Ref for navbar
 
   useLayoutEffect(() => {
@@ -55,7 +55,7 @@ const Navbar = ({ toggleNavSideBar }) => {
           onMouseDown={() => {
             toggleNavSideBar();
           }}
-          className="menu">
+          className={`menu${isNavOpen ? ' menu-active' : ''}`}>
           <div className="menu-txt">
             <motion.p variants={opacity} animate="open">
               MENU

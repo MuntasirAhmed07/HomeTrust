@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import React, { useLayoutEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { opacity } from '../animation';
 import Logo from '../assets/logo';
 import ThemeSwitch from '../components/ThemeSwitch/ThemeSwitch';
@@ -44,7 +45,9 @@ const Navbar = ({ toggleNavSideBar, isNavOpen }) => {
     <nav ref={navbarRef} className="navbar">
       {/* Logo Section */}
       <div className="logo">
-        <Logo />
+        <Link to="/">
+          <Logo />
+        </Link>
       </div>
 
       {/* Right Section */}

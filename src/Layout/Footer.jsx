@@ -20,7 +20,9 @@ const Footer = () => {
       </div>
       <div className="address-info">
         <div className="footer-social">
-          <img src={facebook} alt="Facebook" />
+          <a href="https://www.facebook.com/hometrustlivingltd/" target="_blank" rel="noopener noreferrer">
+            <img src={facebook} alt="Facebook" />
+          </a>
           <img src={instagram} alt="Instagram" />
           <img src={linkedin} alt="LinkedIn" />
           <img src={tiktok} alt="TikTok" />

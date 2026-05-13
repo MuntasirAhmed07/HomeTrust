@@ -1,8 +1,36 @@
+import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion';
-import React from 'react';
+import React, { useState } from 'react';
 import './ContactForm.css';
 
 const ContactForm = () => {
+  const [form, setForm] = useState({ name: '', email: '', message: '' });
+  const [status, setStatus] = useState('idle'); // idle | sending | success | error
+
+  const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setStatus('sending');
+
+    emailjs.send(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_CONTACT_TEMPLATE_ID,
+      {
+        from_name: form.name,
+        from_email: form.email,
+        message: form.message,
+        to_email: 'muntasira17@gmail.com',
+      },
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    ).then(() => {
+      setStatus('success');
+      setForm({ name: '', email: '', message: '' });
+    }).catch(() => {
+      setStatus('error');
+    });
+  };
+
   return (
     <motion.section
       className="cf-section"
@@ -12,20 +40,45 @@ const ContactForm = () => {
       viewport={{ once: false }}>
       <div className="cf-left">
         <h2 className="cf-title">Get In Touch</h2>
-        <form className="cf-form" onSubmit={(e) => e.preventDefault()}>
+        <form className="cf-form" onSubmit={handleSubmit}>
           <div className="cf-form-group">
             <label>Name</label>
-            <input type="text" placeholder="Your name" />
+            <input
+              type="text"
+              name="name"
+              placeholder="Your name"
+              value={form.name}
+              onChange={handleChange}
+              required
+            />
           </div>
           <div className="cf-form-group">
             <label>Email</label>
-            <input type="email" placeholder="Your email" />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your email"
+              value={form.email}
+              onChange={handleChange}
+              required
+            />
           </div>
           <div className="cf-form-group">
             <label>Message</label>
-            <textarea rows={5} placeholder="Your message" />
+            <textarea
+              rows={5}
+              name="message"
+              placeholder="Your message"
+              value={form.message}
+              onChange={handleChange}
+              required
+            />
           </div>
-          <button type="submit" className="cf-btn">Submit</button>
+          <button type="submit" className="cf-btn" disabled={status === 'sending'}>
+            {status === 'sending' ? 'Sending…' : 'Submit'}
+          </button>
+          {status === 'success' && <p className="cf-feedback cf-success">Message sent! We'll be in touch soon.</p>}
+          {status === 'error' && <p className="cf-feedback cf-error">Something went wrong. Please try again.</p>}
         </form>
       </div>
       <div className="cf-right">

@@ -34,7 +34,7 @@ const NavSideBar = ({ toggleNavSideBar }) => {
             </a>
           </div>
           <div className="social-icons">
-            <a>
+            <a href="https://www.facebook.com/hometrustlivingltd/" target="_blank" rel="noopener noreferrer">
               <i class="fa-brands fa-facebook-f"></i>
             </a>
           </div>

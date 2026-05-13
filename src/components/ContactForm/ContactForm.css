@@ -81,6 +81,20 @@
   color: #fff;
 }
 
+.cf-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.cf-feedback {
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  margin: 0;
+}
+
+.cf-success { color: #2e7d32; }
+.cf-error   { color: #c62828; }
+
 .cf-right {
   flex: 1;
   display: flex;

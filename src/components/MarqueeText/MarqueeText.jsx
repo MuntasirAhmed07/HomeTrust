@@ -110,7 +110,7 @@ const MarqueeText = () => {
 
   return (
     <>
-      <div className="marq-text-container" ref={containerRef}>
+      <div className="marq-text-container marq-desktop-only" ref={containerRef}>
         <div className="marquee-wrapper">
           <p ref={outlineRef} className="marq-top-text-outline">
             PRIME SPOT • ADVISORY SERVICES • TIMELY HANDOVER

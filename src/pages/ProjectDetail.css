@@ -315,3 +315,26 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 768px) {
+  .project-map-section {
+    height: auto;
+    padding: 3rem 0 0;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .project-map-section .map-canvas-wrapper {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .project-map-section .leaflet-container {
+    height: 350px;
+    width: 100%;
+  }
+  .project-detail-hero {
+    padding: 4rem 2rem 0;
+  }
+}

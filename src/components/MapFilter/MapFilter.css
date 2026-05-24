@@ -94,3 +94,44 @@
 .filter-option.selected {
   background: rgba(255, 255, 255, 0.16);
 }
+
+@media (max-width: 768px) {
+  .map-filter-bar {
+    position: static;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    left: auto;
+    bottom: auto;
+  }
+
+  .filter-pill-wrapper {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .filter-pill {
+    padding: 12px 4px;
+    font-size: 11px;
+    width: 100%;
+    justify-content: center;
+    gap: 4px;
+    overflow: hidden;
+  }
+
+  .filter-pill span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .filter-dropdown {
+    bottom: 100%;
+    min-width: 100%;
+  }
+
+  .filter-option {
+    padding: 14px 14px;
+    font-size: 13px;
+  }
+}

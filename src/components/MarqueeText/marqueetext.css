@@ -45,6 +45,7 @@
   position: relative;
   width: 100%;
   height: 5rem;
+  overflow: hidden;
 }
 
 .marquee-wrapper {
@@ -78,4 +79,55 @@
   left: 0;
   white-space: nowrap;
   z-index: -1;
+}
+
+/* Desktop/mobile visibility */
+.marq-desktop-only {
+  display: block;
+}
+.marq-mobile-only {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .marq-desktop-only {
+    display: none;
+  }
+  .marq-mobile-only {
+    display: block;
+  }
+}
+
+/* Mobile marquee container */
+.marq-mobile-container {
+  position: absolute;
+  top: 4%;
+  width: 100%;
+  height: 6em;
+  overflow: hidden;
+}
+
+.marq-mobile-outline {
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--text-color);
+  white-space: nowrap;
+  line-height: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.marq-mobile-fill {
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+  color: var(--text-color);
+  white-space: nowrap;
+  line-height: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }

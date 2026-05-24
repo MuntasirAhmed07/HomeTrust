@@ -104,24 +104,24 @@
   .carousel-container-small {
     width: 441px;
     height: 261px;
-    top: 10%;
-    left: 5%;
+    top: 5%;
+    left: 0%;
   }
 
   .featured-text {
     top: 60%;
-    left: 30%;
+    left: 25%;
   }
   .project-title {
     top: 50%;
-    left: 30%;
+    left: 35%;
     font-size: 40px;
   }
   .carousel-container button {
     top: 75%;
   }
   .prev {
-    left: 30%;
+    left: 25%;
     font-size: 1.5rem;
   }
   .next {
@@ -132,7 +132,7 @@
   .view-project {
     position: absolute;
     top: 85%;
-    left: 37%;
+    left: 30%;
     z-index: 3;
     color: #fafafa;
     text-transform: uppercase;

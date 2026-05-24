@@ -57,7 +57,30 @@
 
 /* ── Responsive ───────────────────────────────────── */
 @media (max-width: 768px) {
+  .op-desc {
+    padding: 40px 5%;
+  }
+
+  .op-desc p {
+    max-width: 100%;
+    font-size: 15px;
+  }
+
+  .op-logos {
+    padding: 0 5% 60px;
+  }
+
   .op-logos-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .op-logo-cell {
+    padding: 20px 12px;
+    min-height: 90px;
+  }
+
+  .op-logo-cell img {
+    max-width: 110px;
+    max-height: 70px;
   }
 }

@@ -33,3 +33,17 @@
     font-size: 1.2rem !important;
   }
 }
+
+@media (max-width: 768px) {
+  .heading-container {
+    margin: 0;
+    padding: 3vh 1rem;
+    text-align: center;
+  }
+  .line {
+    white-space: normal;
+    overflow: visible;
+    font-size: 1rem !important;
+    text-align: center;
+  }
+}

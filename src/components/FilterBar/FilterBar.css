@@ -182,7 +182,9 @@
 @media (max-width: 720px) {
   .filter-bar {
     flex-direction: column;
-    margin: 0 16px;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
   }
 
   .filter-item {
@@ -197,6 +199,14 @@
 
   .filter-item:last-child {
     border-bottom: none;
+  }
+
+  .filter-trigger {
+    padding: 16px 20px;
+  }
+
+  .filter-search-item {
+    padding: 16px 20px;
   }
 
   .filter-dropdown-panel {

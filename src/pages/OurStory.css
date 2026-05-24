@@ -401,11 +401,37 @@
   .os-values > h2 {
     font-size: 36px;
     letter-spacing: 4px;
+    text-align: center;
+  }
+
+  .os-foundation-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .os-foundation-tagline {
+    font-size: 22px;
+    padding-top: 0;
+    text-align: center;
+  }
+
+  .os-foundation-body p {
+    text-align: center;
   }
 
   .os-who-left h2 {
     font-size: 32px;
     letter-spacing: 4px;
+    text-align: center;
+  }
+
+  .os-who-left p,
+  .os-who-right p {
+    text-align: center;
+  }
+
+  .os-who-right {
+    padding-top: 0;
   }
 
   .os-foundation-right {
@@ -425,6 +451,12 @@
   .os-mission h2 {
     font-size: 28px;
     letter-spacing: 3px;
+    text-align: center;
+  }
+
+  .os-vision p,
+  .os-mission p {
+    text-align: center;
   }
 
   .os-vm-img {
@@ -450,6 +482,10 @@
     height: 280px;
   }
 
+  .os-values-desc {
+    text-align: center;
+  }
+
   .os-faq {
     flex-direction: column;
     padding: 48px 5%;
@@ -463,5 +499,8 @@
   .os-faq-heading h2 {
     font-size: 36px;
     letter-spacing: 4px;
+  }
+  .os-faq-list {
+    width: 100%;
   }
 }

@@ -70,3 +70,9 @@ body:not(.dark-mode) .our-story {
 body:not(.dark-mode) .top-fill-text {
   color: #000;
 } */
+
+@media (max-width: 768px) {
+  .text-container {
+    margin-top: 20px;
+  }
+}

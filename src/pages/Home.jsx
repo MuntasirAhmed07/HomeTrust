@@ -13,6 +13,7 @@ import FloatImg from '../components/FloationImage/FloatImg';
 import LetsConnect from '../components/LetsConnect/LetsConnect';
 import MapSection from '../components/MapSection/MapSection';
 import MarqueeText from '../components/MarqueeText/MarqueeText';
+import MarqueeTextMobile from '../components/MarqueeText/MarqueeTextMobile';
 import StatsSection from '../components/StatsSection/StatsSection';
 import TextEffect from '../components/TextEffect/TextEffect';
 
@@ -102,6 +103,7 @@ const Home = () => {
       >
         <div className="vid-marq-wrapper">
           <MarqueeText />
+          <MarqueeTextMobile />
 
           <motion.div
             className="video-container"

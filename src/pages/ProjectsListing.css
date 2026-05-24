@@ -100,11 +100,17 @@
     padding: 0;
   }
 
+  .projects-body {
+    padding: 0 0.75rem;
+  }
+
   .projects-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1.5rem 0;
   }
 
   .projects-grid > .project-card:nth-child(even) {
-    margin-top: 0;
+    margin-top: clamp(1.5rem, 5vw, 2.5rem);
   }
 }

@@ -1,12 +1,20 @@
 import { motion } from 'framer-motion';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { menuSlide } from '../animation';
+import { menuSlide, menuSlideTop } from '../animation';
 
 const NavSideBar = ({ toggleNavSideBar }) => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handler = () => setIsMobile(window.innerWidth <= 768);
+    window.addEventListener('resize', handler);
+    return () => window.removeEventListener('resize', handler);
+  }, []);
+
   return (
     <motion.div
-      variants={menuSlide}
+      variants={isMobile ? menuSlideTop : menuSlide}
       animate="enter"
       exit="exit"
       initial="initial"

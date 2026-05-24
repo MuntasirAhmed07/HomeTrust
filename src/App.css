@@ -420,7 +420,7 @@
   }
   .hero-txt h1 {
     font-size: 30px;
-    letter-spacing: 15px;
+    letter-spacing: 30%;
   }
   .hero-desc p {
     font-size: 17px;
@@ -431,17 +431,64 @@
   }
 
   .video-section {
-    height: 500px;
-    width: 80vw;
+    height: auto;
+    width: 100%;
+    padding: 4.5rem 0;
   }
   .vid-marq-wrapper {
-    overflow: visible;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .video-container {
     transform: none !important;
+    width: 90vw !important;
+    margin: 0 auto !important;
   }
 
   .video {
     width: 100%;
+  }
+
+  /* Map — full width, auto height */
+  .map-container {
+    height: auto;
+    padding: 3rem 0 0;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .map-container h3 {
+    position: static;
+    font-size: 1.8rem;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .map-canvas-wrapper {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .leaflet-container {
+    height: 350px;
+    width: 100%;
+  }
+  .ip-close {
+    right: 12%;
+  }
+
+  .info-panel {
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    transform: translateY(-100%);
+    transition: transform 0.8s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+
+  .info-panel.show {
+    transform: translateY(0%);
   }
 }
